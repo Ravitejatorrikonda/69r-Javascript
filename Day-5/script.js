@@ -135,7 +135,7 @@
  * 
  */
 
-var day=10
+// var day=10
 
 // switch(day){
 //     case 1:console.log("sunday");break;
