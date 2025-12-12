@@ -1,0 +1,21 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "harsha"
+    },
+    {
+      "id": "2",
+      "name": "Ramya"
+    },
+    {
+      "id": "3",
+      "name": "Soaps",
+      "image": "hvsdkjvckjhsdckhdbckjh"
+    },
+    {
+      "name": "Soaps",
+      "id": "4"
+    }
+  ]
+}
