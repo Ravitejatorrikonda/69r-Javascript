@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Sowjanya"
+    },
+    {
+      "id": "2",
+      "name": "Mounika"
+    },
+    {
+      "id": "3",
+      "name": "Srinithya"
+    },
+    {
+      "id": "4",
+      "name": "malli"
+    },
+    {
+      "id": "5",
+      "name": "mani"
+    }
+  ]
+}
