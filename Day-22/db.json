@@ -1,0 +1,14 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "karthik",
+      "salary": "25000"
+    },
+    {
+      "id": "2",
+      "name": "bhanu",
+      "salary": "70000"
+    }
+  ]
+}
