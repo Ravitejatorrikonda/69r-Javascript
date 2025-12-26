@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+    what is js
+    v8 engine
+    datatypes
+    variables
+    GEC
+    FEC
+    operators
+    conditional statements
+    loops
+    functions
+       callback,named ,arrow fun,anonymous fun,higher order, lower order fun,first class fun
+       scopes
+       callstack,
+       synchronus
+       asynchronus
+       callback hell
+       promises
+       fetch method
+       https method:-get post put patch delete
+       array methods
+       array itarative methods
+       async adn await
+       error handling
+
+
+       DOM:-
+          API
+          events
+          BOM
+    
+    DOM(document object model)
+
+    createElement("elementName")
+
+    create a div container with some sample content
+
+
+    create a div container in side div create a p tag and add some text in dynamically and dispaly in body
+
+    create a un-order list with 3 list items and diff text;
+    -->
+
+
+
+    <script>
+
+        // let div = document.createElement("div")
+        // div.innerText = "Hello There"
+        // document.body.appendChild(div)
+
+
+
+        // let container=document.createElement("div")
+        // console.log(container)
+        // let p=document.createElement("p")
+        // console.log(p);
+        
+        // p.innerText="Hello World";
+        // container.appendChild(p)
+        // console.log(container)
+        // document.body.appendChild(container)
+
+
+        let ul=document.createElement("ul")
+        for(i=1;i<=3;i++){
+            let li=document.createElement("li")
+            li.innerText=i
+            ul.appendChild(li)
+        }
+        document.body.appendChild(ul)
+
+
+    </script>
+
+
+</body>
+
+</html>
