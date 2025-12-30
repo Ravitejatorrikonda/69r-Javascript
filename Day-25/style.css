@@ -1,0 +1,130 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem;
+  gap: 1.5rem;
+
+  /* Vibrant Mesh Gradient Background */
+  background: radial-gradient(120% 140% at 20% 20%, #2a4af3, transparent),
+              radial-gradient(120% 140% at 90% 80%, #9933ff, transparent),
+              linear-gradient(120deg, #0f1220, #1a1f40);
+  background-attachment: fixed;
+  color: #fff;
+}
+
+/* Input + Button Panel */
+input, button {
+  padding: 0.8rem 1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #fff;
+  outline: none;
+}
+
+input {
+  width: clamp(200px, 40vw, 360px);
+}
+
+button {
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateY(-1px);
+}
+
+/* Main Glass Card */
+#main {
+  width: 90%;
+  max-width: 420px;
+  min-height: 260px;
+  padding: 1.8rem;
+  margin-top: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+
+  border-radius: 26px;
+
+  /* Glassmorphism Core */
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.28);
+  box-shadow: 0 0 40px rgba(0,0,0,0.25);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  /* Subtle inner glow */
+  outline: 1px solid rgba(255,255,255,0.35);
+}
+
+/* Big Temperature / Title */
+#main .temp {
+  font-size: clamp(2.6rem, 6vw, 4.2rem);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Weather Status */
+#main .desc {
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  opacity: 0.85;
+}
+
+/* 5-Day Forecast Row — Glass Mini Panels */
+.forecast {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+  overflow-x: auto;
+}
+
+.forecast .day {
+  flex: 1 0 80px;
+  padding: 0.7rem;
+  border-radius: 18px;
+
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.25);
+  backdrop-filter: blur(12px);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Scroll hint on small screens */
+.forecast::-webkit-scrollbar {
+  display: none;
+}
+
+/* Tablet / Wide Layout */
+@media (min-width: 900px) {
+  body {
+    justify-content: center;
+  }
+
+  #main {
+    max-width: 560px;
+    padding: 2.2rem;
+  }
+
+  .forecast .day {
+    flex-basis: 100px;
+  }
+}
